@@ -1,0 +1,582 @@
+--[=[
+Script made by 00script
+ไครก็อปเหดียวฟาดปาก
+Made in Thailand
+]=]
+
+-- Instances: 50 | Scripts: 0 | Modules: 0 | Tags: 0
+local LMG2L = {};
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top
+LMG2L["top_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["top_2"]["BorderSizePixel"] = 0;
+LMG2L["top_2"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+LMG2L["top_2"]["Size"] = UDim2.new(0, 472, 0, 20);
+LMG2L["top_2"]["Position"] = UDim2.new(0, 12, 0, 10);
+LMG2L["top_2"]["Name"] = [[top]];
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame1
+LMG2L["Frame1_3"] = Instance.new("Frame", LMG2L["top_2"]);
+LMG2L["Frame1_3"]["BorderSizePixel"] = 0;
+LMG2L["Frame1_3"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+LMG2L["Frame1_3"]["Size"] = UDim2.new(0, 472, 0, 294);
+LMG2L["Frame1_3"]["Position"] = UDim2.new(0, 0, 0, 20);
+LMG2L["Frame1_3"]["Name"] = [[Frame1]];
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame1.TextButton4
+LMG2L["TextButton4_4"] = Instance.new("TextButton", LMG2L["Frame1_3"]);
+LMG2L["TextButton4_4"]["BorderSizePixel"] = 0;
+LMG2L["TextButton4_4"]["AutoLocalize"] = false;
+LMG2L["TextButton4_4"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton4_4"]["TextSize"] = 10;
+LMG2L["TextButton4_4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton4_4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton4_4"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton4_4"]["Size"] = UDim2.new(0, 170, 0, 22);
+LMG2L["TextButton4_4"]["Text"] = [[clear]];
+LMG2L["TextButton4_4"]["Name"] = [[TextButton4]];
+LMG2L["TextButton4_4"]["Position"] = UDim2.new(0, 160, 0, 272);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame1.TextButton2
+LMG2L["TextButton2_5"] = Instance.new("TextButton", LMG2L["Frame1_3"]);
+LMG2L["TextButton2_5"]["BorderSizePixel"] = 0;
+LMG2L["TextButton2_5"]["AutoLocalize"] = false;
+LMG2L["TextButton2_5"]["TextSize"] = 12;
+LMG2L["TextButton2_5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton2_5"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+LMG2L["TextButton2_5"]["Size"] = UDim2.new(0, 242, 0, 18);
+LMG2L["TextButton2_5"]["Text"] = [[Admin panel]];
+LMG2L["TextButton2_5"]["Name"] = [[TextButton2]];
+LMG2L["TextButton2_5"]["Position"] = UDim2.new(0, 230, 0, 0);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame1.TextButton5
+LMG2L["TextButton5_6"] = Instance.new("TextButton", LMG2L["Frame1_3"]);
+LMG2L["TextButton5_6"]["BorderSizePixel"] = 0;
+LMG2L["TextButton5_6"]["AutoLocalize"] = false;
+LMG2L["TextButton5_6"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton5_6"]["TextSize"] = 10;
+LMG2L["TextButton5_6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton5_6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton5_6"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton5_6"]["Size"] = UDim2.new(0, 140, 0, 22);
+LMG2L["TextButton5_6"]["Text"] = [[load]];
+LMG2L["TextButton5_6"]["Name"] = [[TextButton5]];
+LMG2L["TextButton5_6"]["Position"] = UDim2.new(0, 332, 0, 272);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame1.ScrollingFrame
+LMG2L["ScrollingFrame_7"] = Instance.new("ScrollingFrame", LMG2L["Frame1_3"]);
+LMG2L["ScrollingFrame_7"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+LMG2L["ScrollingFrame_7"]["BorderSizePixel"] = 0;
+LMG2L["ScrollingFrame_7"]["ElasticBehavior"] = Enum.ElasticBehavior.Always;
+LMG2L["ScrollingFrame_7"]["VerticalScrollBarInset"] = Enum.ScrollBarInset.ScrollBar;
+LMG2L["ScrollingFrame_7"]["BackgroundColor3"] = Color3.fromRGB(91, 91, 91);
+LMG2L["ScrollingFrame_7"]["Size"] = UDim2.new(0, 472, 0, 254);
+LMG2L["ScrollingFrame_7"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ScrollingFrame_7"]["Position"] = UDim2.new(0, 0, 0, 18);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame1.ScrollingFrame.TextBox
+LMG2L["TextBox_8"] = Instance.new("TextBox", LMG2L["ScrollingFrame_7"]);
+LMG2L["TextBox_8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextBox_8"]["BorderSizePixel"] = 0;
+LMG2L["TextBox_8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextBox_8"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+LMG2L["TextBox_8"]["BackgroundColor3"] = Color3.fromRGB(70, 70, 70);
+LMG2L["TextBox_8"]["Size"] = UDim2.new(0, 472, 0, 696);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame1.TextButton3
+LMG2L["TextButton3_9"] = Instance.new("TextButton", LMG2L["Frame1_3"]);
+LMG2L["TextButton3_9"]["BorderSizePixel"] = 0;
+LMG2L["TextButton3_9"]["AutoLocalize"] = false;
+LMG2L["TextButton3_9"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton3_9"]["TextSize"] = 10;
+LMG2L["TextButton3_9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton3_9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton3_9"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton3_9"]["Size"] = UDim2.new(0, 160, 0, 22);
+LMG2L["TextButton3_9"]["Text"] = [[execute]];
+LMG2L["TextButton3_9"]["Name"] = [[TextButton3]];
+LMG2L["TextButton3_9"]["Position"] = UDim2.new(0, 0, 0, 272);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame1.TextButton
+LMG2L["TextButton_a"] = Instance.new("TextButton", LMG2L["Frame1_3"]);
+LMG2L["TextButton_a"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_a"]["AutoLocalize"] = false;
+LMG2L["TextButton_a"]["TextSize"] = 12;
+LMG2L["TextButton_a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_a"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+LMG2L["TextButton_a"]["Size"] = UDim2.new(0, 230, 0, 18);
+LMG2L["TextButton_a"]["Text"] = [[executor]];
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.TextButton4
+LMG2L["TextButton4_b"] = Instance.new("TextButton", LMG2L["top_2"]);
+LMG2L["TextButton4_b"]["TextWrapped"] = true;
+LMG2L["TextButton4_b"]["BorderSizePixel"] = 0;
+LMG2L["TextButton4_b"]["TextScaled"] = true;
+LMG2L["TextButton4_b"]["TextColor3"] = Color3.fromRGB(131, 203, 255);
+LMG2L["TextButton4_b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton4_b"]["BackgroundTransparency"] = 19;
+LMG2L["TextButton4_b"]["Size"] = UDim2.new(0, 28, 0, 20);
+LMG2L["TextButton4_b"]["Text"] = [[kjrfhkjehgkdbgjhhf4kfjgbjkrhgjkrfbgkfjrhkg
+jhgvjxgrjvgdfjuvgjyvjdgdvjuvgdfjkfhvjkfdhgkhgkdfhkgdfkjghefg]];
+LMG2L["TextButton4_b"]["Name"] = [[TextButton4]];
+LMG2L["TextButton4_b"]["Rotation"] = 45;
+LMG2L["TextButton4_b"]["Position"] = UDim2.new(0, 414, 0, 0);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2
+LMG2L["Frame2_c"] = Instance.new("Frame", LMG2L["top_2"]);
+LMG2L["Frame2_c"]["Visible"] = false;
+LMG2L["Frame2_c"]["BorderSizePixel"] = 0;
+LMG2L["Frame2_c"]["BackgroundColor3"] = Color3.fromRGB(60, 60, 60);
+LMG2L["Frame2_c"]["Size"] = UDim2.new(0, 472, 0, 294);
+LMG2L["Frame2_c"]["Position"] = UDim2.new(0, 0, 0, 20);
+LMG2L["Frame2_c"]["Name"] = [[Frame2]];
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.TextButton4
+LMG2L["TextButton4_d"] = Instance.new("TextButton", LMG2L["Frame2_c"]);
+LMG2L["TextButton4_d"]["BorderSizePixel"] = 0;
+LMG2L["TextButton4_d"]["AutoLocalize"] = false;
+LMG2L["TextButton4_d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton4_d"]["TextSize"] = 12;
+LMG2L["TextButton4_d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton4_d"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
+LMG2L["TextButton4_d"]["Size"] = UDim2.new(0, 124, 0, 34);
+LMG2L["TextButton4_d"]["Text"] = [[Player]];
+LMG2L["TextButton4_d"]["Name"] = [[TextButton4]];
+LMG2L["TextButton4_d"]["Position"] = UDim2.new(0, 2, 0, 58);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.TextButton6
+LMG2L["TextButton6_e"] = Instance.new("TextButton", LMG2L["Frame2_c"]);
+LMG2L["TextButton6_e"]["BorderSizePixel"] = 0;
+LMG2L["TextButton6_e"]["AutoLocalize"] = false;
+LMG2L["TextButton6_e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton6_e"]["TextSize"] = 12;
+LMG2L["TextButton6_e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton6_e"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
+LMG2L["TextButton6_e"]["Size"] = UDim2.new(0, 124, 0, 38);
+LMG2L["TextButton6_e"]["Text"] = [[backpack]];
+LMG2L["TextButton6_e"]["Name"] = [[TextButton6]];
+LMG2L["TextButton6_e"]["Position"] = UDim2.new(0, 2, 0, 134);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.TextButton2
+LMG2L["TextButton2_f"] = Instance.new("TextButton", LMG2L["Frame2_c"]);
+LMG2L["TextButton2_f"]["BorderSizePixel"] = 0;
+LMG2L["TextButton2_f"]["AutoLocalize"] = false;
+LMG2L["TextButton2_f"]["TextSize"] = 12;
+LMG2L["TextButton2_f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton2_f"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+LMG2L["TextButton2_f"]["Size"] = UDim2.new(0, 242, 0, 18);
+LMG2L["TextButton2_f"]["Text"] = [[Admin panel]];
+LMG2L["TextButton2_f"]["Name"] = [[TextButton2]];
+LMG2L["TextButton2_f"]["Position"] = UDim2.new(0, 230, 0, 0);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.TextButton5
+LMG2L["TextButton5_10"] = Instance.new("TextButton", LMG2L["Frame2_c"]);
+LMG2L["TextButton5_10"]["BorderSizePixel"] = 0;
+LMG2L["TextButton5_10"]["AutoLocalize"] = false;
+LMG2L["TextButton5_10"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton5_10"]["TextSize"] = 12;
+LMG2L["TextButton5_10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton5_10"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
+LMG2L["TextButton5_10"]["Size"] = UDim2.new(0, 124, 0, 34);
+LMG2L["TextButton5_10"]["Text"] = [[Extra]];
+LMG2L["TextButton5_10"]["Name"] = [[TextButton5]];
+LMG2L["TextButton5_10"]["Position"] = UDim2.new(0, 2, 0, 96);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.TextButton3
+LMG2L["TextButton3_11"] = Instance.new("TextButton", LMG2L["Frame2_c"]);
+LMG2L["TextButton3_11"]["BorderSizePixel"] = 0;
+LMG2L["TextButton3_11"]["AutoLocalize"] = false;
+LMG2L["TextButton3_11"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton3_11"]["TextSize"] = 12;
+LMG2L["TextButton3_11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton3_11"]["BackgroundColor3"] = Color3.fromRGB(39, 39, 39);
+LMG2L["TextButton3_11"]["Size"] = UDim2.new(0, 124, 0, 34);
+LMG2L["TextButton3_11"]["Text"] = [[Output]];
+LMG2L["TextButton3_11"]["Name"] = [[TextButton3]];
+LMG2L["TextButton3_11"]["Position"] = UDim2.new(0, 2, 0, 20);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.TextButton
+LMG2L["TextButton_12"] = Instance.new("TextButton", LMG2L["Frame2_c"]);
+LMG2L["TextButton_12"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_12"]["AutoLocalize"] = false;
+LMG2L["TextButton_12"]["TextSize"] = 12;
+LMG2L["TextButton_12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_12"]["BackgroundColor3"] = Color3.fromRGB(40, 40, 40);
+LMG2L["TextButton_12"]["Size"] = UDim2.new(0, 230, 0, 18);
+LMG2L["TextButton_12"]["Text"] = [[executor]];
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output
+LMG2L["output_13"] = Instance.new("Frame", LMG2L["Frame2_c"]);
+LMG2L["output_13"]["Visible"] = false;
+LMG2L["output_13"]["BorderSizePixel"] = 0;
+LMG2L["output_13"]["BackgroundColor3"] = Color3.fromRGB(100, 100, 100);
+LMG2L["output_13"]["Size"] = UDim2.new(0, 340, 0, 274);
+LMG2L["output_13"]["Position"] = UDim2.new(0, 130, 0, 20);
+LMG2L["output_13"]["Name"] = [[output]];
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output.ScrollingFrame
+LMG2L["ScrollingFrame_14"] = Instance.new("ScrollingFrame", LMG2L["output_13"]);
+LMG2L["ScrollingFrame_14"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+LMG2L["ScrollingFrame_14"]["BorderSizePixel"] = 0;
+LMG2L["ScrollingFrame_14"]["BackgroundColor3"] = Color3.fromRGB(57, 57, 57);
+LMG2L["ScrollingFrame_14"]["Size"] = UDim2.new(0, 340, 0, 108);
+LMG2L["ScrollingFrame_14"]["Position"] = UDim2.new(0, 0, 0, 166);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output.ScrollingFrame.UIListLayout
+LMG2L["UIListLayout_15"] = Instance.new("UIListLayout", LMG2L["ScrollingFrame_14"]);
+
+-- SCRIPT LIST
+local scripts = {
+    {"1x1 HAX MINI GUI", "https://pastefy.app/4U9m0vuN/raw?part=1x1x1x1x1_hax%20Gui%20mini%20edition"},
+    {"OUCH SIMSOMP SPAM", "https://pastefy.app/h6fhUC6z/raw"},
+    {"SAMSUNG NOTE", "https://pastefy.app/dA68xt1p/raw"},
+    {"PROJECT ZAGA", "https://pastefy.app/rMyVKrO6/raw"},
+    {"PRIVATE 1X1 V7.1.0", "https://pastefy.app/tsPrm5Ky/raw"},
+    {"PROJECT SEGMA V2", "https://pastefy.app/EUwYT4gN/raw"},
+}
+
+-- ใช้ ScrollingFrame เดิม
+local frame = LMG2L["ScrollingFrame_14"]
+
+for _, data in pairs(scripts) do
+    local name = data[1]
+    local url = data[2]
+
+    local btn = Instance.new("TextButton")
+    btn.Parent = frame
+    btn.BorderSizePixel = 0
+    btn.TextXAlignment = Enum.TextXAlignment.Left
+    btn.TextSize = 12
+    btn.TextColor3 = Color3.fromRGB(255,255,255)
+    btn.BackgroundColor3 = Color3.fromRGB(81,81,81)
+    btn.Size = UDim2.new(0,328,0,20)
+    btn.Text = name
+
+    btn.MouseButton1Click:Connect(function()
+        local success, result = pcall(function()
+            return loadstring(game:HttpGet(url))()
+        end)
+
+        if success then
+            print(name .. " loaded!")
+        else
+            warn("Error : "..result)
+        end
+    end)
+end
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.output.TextLabel
+LMG2L["TextLabel_1c"] = Instance.new("TextLabel", LMG2L["output_13"]);
+LMG2L["TextLabel_1c"]["TextWrapped"] = true;
+LMG2L["TextLabel_1c"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_1c"]["TextScaled"] = true;
+LMG2L["TextLabel_1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_1c"]["Size"] = UDim2.new(0, 98, 0, 82);
+LMG2L["TextLabel_1c"]["Text"] = [[67]];
+LMG2L["TextLabel_1c"]["Position"] = UDim2.new(0, 234, 0, 6);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.player
+LMG2L["player_1d"] = Instance.new("Frame", LMG2L["Frame2_c"]);
+LMG2L["player_1d"]["Visible"] = false;
+LMG2L["player_1d"]["BorderSizePixel"] = 0;
+LMG2L["player_1d"]["BackgroundColor3"] = Color3.fromRGB(100, 100, 100);
+LMG2L["player_1d"]["Size"] = UDim2.new(0, 340, 0, 274);
+LMG2L["player_1d"]["Position"] = UDim2.new(0, 130, 0, 20);
+LMG2L["player_1d"]["Name"] = [[player]];
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.player.TextLabel
+LMG2L["TextLabel_1e"] = Instance.new("TextLabel", LMG2L["player_1d"]);
+LMG2L["TextLabel_1e"]["TextWrapped"] = true;
+LMG2L["TextLabel_1e"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_1e"]["TextScaled"] = true;
+LMG2L["TextLabel_1e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_1e"]["Size"] = UDim2.new(0, 282, 0, 82);
+LMG2L["TextLabel_1e"]["Text"] = [[SOON!!!!]];
+LMG2L["TextLabel_1e"]["Rotation"] = -45;
+LMG2L["TextLabel_1e"]["Position"] = UDim2.new(0, 24, 0, 88);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.extra
+LMG2L["extra_1f"] = Instance.new("Frame", LMG2L["Frame2_c"]);
+LMG2L["extra_1f"]["Visible"] = false;
+LMG2L["extra_1f"]["BorderSizePixel"] = 0;
+LMG2L["extra_1f"]["BackgroundColor3"] = Color3.fromRGB(100, 100, 100);
+LMG2L["extra_1f"]["Size"] = UDim2.new(0, 340, 0, 274);
+LMG2L["extra_1f"]["Position"] = UDim2.new(0, 130, 0, 20);
+LMG2L["extra_1f"]["Name"] = [[extra]];
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.extra.TextLabel
+LMG2L["TextLabel_20"] = Instance.new("TextLabel", LMG2L["extra_1f"]);
+LMG2L["TextLabel_20"]["TextWrapped"] = true;
+LMG2L["TextLabel_20"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_20"]["TextScaled"] = true;
+LMG2L["TextLabel_20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_20"]["Size"] = UDim2.new(0, 178, 0, 82);
+LMG2L["TextLabel_20"]["Text"] = [[idk]];
+LMG2L["TextLabel_20"]["Position"] = UDim2.new(0, 80, 0, 100);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack
+LMG2L["backpack_21"] = Instance.new("Frame", LMG2L["Frame2_c"]);
+LMG2L["backpack_21"]["Visible"] = false;
+LMG2L["backpack_21"]["BorderSizePixel"] = 0;
+LMG2L["backpack_21"]["BackgroundColor3"] = Color3.fromRGB(100, 100, 100);
+LMG2L["backpack_21"]["Size"] = UDim2.new(0, 340, 0, 274);
+LMG2L["backpack_21"]["Position"] = UDim2.new(0, 130, 0, 20);
+LMG2L["backpack_21"]["Name"] = [[backpack]];
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack.ScrollingFrame
+LMG2L["ScrollingFrame_22"] = Instance.new("ScrollingFrame", LMG2L["backpack_21"]);
+LMG2L["ScrollingFrame_22"]["ScrollingDirection"] = Enum.ScrollingDirection.Y;
+LMG2L["ScrollingFrame_22"]["BorderSizePixel"] = 0;
+LMG2L["ScrollingFrame_22"]["BackgroundColor3"] = Color3.fromRGB(57, 57, 57);
+LMG2L["ScrollingFrame_22"]["Size"] = UDim2.new(0, 340, 0, 274);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.Frame2.backpack.ScrollingFrame.UIListLayout
+LMG2L["UIListLayout_23"] = Instance.new("UIListLayout", LMG2L["ScrollingFrame_22"]);
+
+-- SCRIPT LIST
+local scripts = {
+    {"Elsyian Executor","https://pastebin.com/raw/CsFAQyXr"},
+    {"Anonymous Particlez","particle"},
+    {"NOOB GIANT CANNONER","https://raw.githubusercontent.com/gitezgitgit/rare-scripts/refs/heads/main/Cannoneer%20Noob.txt"},
+    {"SSP","https://pastefy.app/t2gUwfXy/raw"},
+    {"PROJECT BALLER","https://gist.githubusercontent.com/gagaamza/d5c91e99f7f31e450817c73de16f7e38/raw/855e5a40280cbeb5369d6c8c22243b0c35e9e735/gistfile1.txt"},
+    {"PROJECT TEGMA","https://pastefy.app/iF7TCeZw/raw"},
+    {"PROJECT 007N7","https://pastebin.com/raw/v0hzsfEV"},
+    {"PROJECT 007n7 TXT","https://pastebin.com/raw/fYQCCQ3v"},
+    {"Super project by g00by666","https://raw.githubusercontent.com/g00byd0lanxdd/team-super-secret/refs/heads/main/team%20super%20secret"},
+    {"PROJECT 3XEN0","https://raw.githubusercontent.com/3xen0kidd/ProjextLigma/refs/heads/main/obfuscated_script-1748044783577.lua.txt"},
+    {"SHIBA","https://pastebin.com/raw/HrE2dKSD"},
+    {"DOMINANT V5.0.1","https://raw.githubusercontent.com/Sugm4Bullet1/LuaXXccL/refs/heads/main/dominatv5.0.1.txt"},
+    {"PROJECT SONIC","https://raw.githubusercontent.com/Hanif290/YoThereSkibidiSigma68/refs/heads/main/Yoshi681SkibidiBoy"},
+    {"C00LGUI BUT GOOD","https://raw.githubusercontent.com/hyperionhax/c00lgui/refs/heads/main/CoolGui.lua"},
+    {"TOPK3K 0.8","https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/main/%5BGUI%5D%20T0PK3K%200.8"},
+    {"MR BEAN ADMIN SS","https://raw.githubusercontent.com/Test4267/mrbean/refs/heads/main/hh"},
+    {"MOUSTER RED EPIC","https://pastebin.com/raw/ZaGXVyhj"},
+    {"Arceus x exe","https://rawscripts.net/raw/Universal-Script-Arceus-x-gui-script-22768"},
+    {"Private Gui 1.35","https://raw.githubusercontent.com/Hanif290/DigsaeyAiijjllnvv/refs/heads/main/Aiisisndndsn"},
+    {"Super Private Gui by Sigmaz","https://raw.githubusercontent.com/Hanif290/SigmaHubV2/refs/heads/main/SigmaHubV2"},
+    {"Private Gui by Hanif","https://raw.githubusercontent.com/Hanif290/SigmaHub/refs/heads/main/SigmaHub"},
+    {"Sigma Gui (Private GUI)","https://pastes.io/raw/private-53"},
+}
+
+-- ใช้ ScrollingFrame เดิม
+local frame = LMG2L["ScrollingFrame_22"]
+
+for _, data in pairs(scripts) do
+    local name = data[1]
+    local url = data[2]
+
+    local btn = Instance.new("TextButton")
+    btn.Parent = frame
+    btn.BorderSizePixel = 0
+    btn.TextXAlignment = Enum.TextXAlignment.Left
+    btn.TextSize = 12
+    btn.TextColor3 = Color3.fromRGB(255,255,255)
+    btn.BackgroundColor3 = Color3.fromRGB(81,81,81)
+    btn.Size = UDim2.new(0,328,0,20)
+    btn.Text = name
+
+    btn.MouseButton1Click:Connect(function()
+        local success, result = pcall(function()
+            return loadstring(game:HttpGet(url))()
+        end)
+
+        if success then
+            print(name .. " loaded!")
+        else
+            warn("Error : "..result)
+        end
+    end)
+end
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.TextButton6
+LMG2L["TextButton6_2c"] = Instance.new("TextButton", LMG2L["top_2"]);
+LMG2L["TextButton6_2c"]["TextWrapped"] = true;
+LMG2L["TextButton6_2c"]["BorderSizePixel"] = 0;
+LMG2L["TextButton6_2c"]["TextSize"] = 21;
+LMG2L["TextButton6_2c"]["TextColor3"] = Color3.fromRGB(131, 203, 255);
+LMG2L["TextButton6_2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton6_2c"]["BackgroundTransparency"] = 19;
+LMG2L["TextButton6_2c"]["Size"] = UDim2.new(0, 28, 0, 20);
+LMG2L["TextButton6_2c"]["Text"] = [[□]];
+LMG2L["TextButton6_2c"]["Name"] = [[TextButton6]];
+LMG2L["TextButton6_2c"]["Position"] = UDim2.new(0, 414, 0, 0);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.TextButton5
+LMG2L["TextButton5_2d"] = Instance.new("TextButton", LMG2L["top_2"]);
+LMG2L["TextButton5_2d"]["TextWrapped"] = true;
+LMG2L["TextButton5_2d"]["BorderSizePixel"] = 0;
+LMG2L["TextButton5_2d"]["TextScaled"] = true;
+LMG2L["TextButton5_2d"]["TextColor3"] = Color3.fromRGB(131, 203, 255);
+LMG2L["TextButton5_2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton5_2d"]["BackgroundTransparency"] = 19;
+LMG2L["TextButton5_2d"]["Size"] = UDim2.new(0, 28, 0, 20);
+LMG2L["TextButton5_2d"]["Text"] = [[kjrfhkjehgkdbgjhhf4kfjgbjkrhgjkrfbgkfjrhkg
+jhgvjxgrjvgdfjuvgjyvjdgdvjuvgdfjkfhvjkfdhgkhgkdfhkgdfkjghefg]];
+LMG2L["TextButton5_2d"]["Name"] = [[TextButton5]];
+LMG2L["TextButton5_2d"]["Rotation"] = -45;
+LMG2L["TextButton5_2d"]["Position"] = UDim2.new(0, 414, 0, 0);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.TextLabel
+LMG2L["TextLabel_2e"] = Instance.new("TextLabel", LMG2L["top_2"]);
+LMG2L["TextLabel_2e"]["TextWrapped"] = true;
+LMG2L["TextLabel_2e"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_2e"]["TextSize"] = 10;
+LMG2L["TextLabel_2e"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextLabel_2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_2e"]["TextColor3"] = Color3.fromRGB(191, 255, 255);
+LMG2L["TextLabel_2e"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_2e"]["Size"] = UDim2.new(0, 180, 0, 20);
+LMG2L["TextLabel_2e"]["Text"] = [[Sigma Banana🤑 by 00script]];
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.TextButton3
+LMG2L["TextButton3_2f"] = Instance.new("TextButton", LMG2L["top_2"]);
+LMG2L["TextButton3_2f"]["TextWrapped"] = true;
+LMG2L["TextButton3_2f"]["BorderSizePixel"] = 0;
+LMG2L["TextButton3_2f"]["TextScaled"] = true;
+LMG2L["TextButton3_2f"]["TextColor3"] = Color3.fromRGB(131, 203, 255);
+LMG2L["TextButton3_2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton3_2f"]["BackgroundTransparency"] = 19;
+LMG2L["TextButton3_2f"]["Size"] = UDim2.new(0, 28, 0, 20);
+LMG2L["TextButton3_2f"]["Text"] = [[kjrfhkjehgkdbgjhhf4kfjgbjkrhgjkrfbgkfjrhkg
+jhgvjxgrjvgdfjuvgjyvjdgdvjuvgdfjkfhvjkfdhgkhgkdfhkgdfkjghefg]];
+LMG2L["TextButton3_2f"]["Name"] = [[TextButton3]];
+LMG2L["TextButton3_2f"]["Position"] = UDim2.new(0, 414, 0, 0);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.TextButton
+LMG2L["TextButton_30"] = Instance.new("TextButton", LMG2L["top_2"]);
+LMG2L["TextButton_30"]["TextWrapped"] = true;
+LMG2L["TextButton_30"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_30"]["TextScaled"] = true;
+LMG2L["TextButton_30"]["TextColor3"] = Color3.fromRGB(131, 203, 255);
+LMG2L["TextButton_30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_30"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_30"]["Size"] = UDim2.new(0, 30, 0, 20);
+LMG2L["TextButton_30"]["Text"] = [[×]];
+LMG2L["TextButton_30"]["Position"] = UDim2.new(0, 442, 0, 0);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.TextButton2
+LMG2L["TextButton2_31"] = Instance.new("TextButton", LMG2L["top_2"]);
+LMG2L["TextButton2_31"]["TextWrapped"] = true;
+LMG2L["TextButton2_31"]["BorderSizePixel"] = 0;
+LMG2L["TextButton2_31"]["TextScaled"] = true;
+LMG2L["TextButton2_31"]["TextColor3"] = Color3.fromRGB(131, 203, 255);
+LMG2L["TextButton2_31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton2_31"]["BackgroundTransparency"] = 19;
+LMG2L["TextButton2_31"]["Size"] = UDim2.new(0, 28, 0, 20);
+LMG2L["TextButton2_31"]["Text"] = [[kjrfhkjehgkdbgjhhf4kfjgbjkrhgjkrfbgkfjrhkg
+jhgvjxgrjvgdfjuvgjyvjdgdvjuvgdfjkfhvjkfdhgkhgkdfhkgdfkjghefg]];
+LMG2L["TextButton2_31"]["Name"] = [[TextButton2]];
+LMG2L["TextButton2_31"]["Rotation"] = 90;
+LMG2L["TextButton2_31"]["Position"] = UDim2.new(0, 414, 0, 0);
+
+-- Players.Hacke999999999980.PlayerGui.ScreenGui.top.UIDragDetector
+LMG2L["UIDragDetector_32"] = Instance.new("UIDragDetector", LMG2L["top_2"]);
+
+-- ScreenGui
+LMG2L["ScreenGui_1"] = Instance.new(
+"ScreenGui",
+game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+)
+
+-- ตายแล้ว GUI ไม่หาย
+LMG2L["ScreenGui_1"].ResetOnSpawn = false
+
+-- SERVICES
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+-- VARIABLES
+local Main = LMG2L["top_2"]
+local ExecutorFrame = LMG2L["Frame1_3"]
+local AdminFrame = LMG2L["Frame2_c"]
+local TextBox = LMG2L["TextBox_8"]
+
+-- CLOSE BUTTON
+LMG2L["TextButton_30"].MouseButton1Click:Connect(function()
+LMG2L["ScreenGui_1"]:Destroy()
+end)
+
+-- SWITCH TO ADMIN PANEL
+LMG2L["TextButton2_5"].MouseButton1Click:Connect(function()
+ExecutorFrame.Visible = false
+AdminFrame.Visible = true
+end)
+
+-- SWITCH TO EXECUTOR
+LMG2L["TextButton_12"].MouseButton1Click:Connect(function()
+ExecutorFrame.Visible = true
+AdminFrame.Visible = false
+end)
+
+-- CLEAR BUTTON
+LMG2L["TextButton4_4"].MouseButton1Click:Connect(function()
+TextBox.Text = ""
+end)
+
+-- EXECUTE BUTTON
+LMG2L["TextButton3_9"].MouseButton1Click:Connect(function()
+local code = TextBox.Text
+
+local success, err = pcall(function()
+    loadstring(code)()
+end)
+
+if not success then
+    warn(err)
+end
+end)
+
+-- OUTPUT TAB
+LMG2L["TextButton3_11"].MouseButton1Click:Connect(function()
+LMG2L["output_13"].Visible = true
+LMG2L["player_1d"].Visible = false
+LMG2L["extra_1f"].Visible = false
+LMG2L["backpack_21"].Visible = false
+end)
+
+-- PLAYER TAB
+LMG2L["TextButton4_d"].MouseButton1Click:Connect(function()
+LMG2L["output_13"].Visible = false
+LMG2L["player_1d"].Visible = true
+LMG2L["extra_1f"].Visible = false
+LMG2L["backpack_21"].Visible = false
+end)
+
+-- EXTRA TAB
+LMG2L["TextButton5_10"].MouseButton1Click:Connect(function()
+LMG2L["output_13"].Visible = false
+LMG2L["player_1d"].Visible = false
+LMG2L["extra_1f"].Visible = true
+LMG2L["backpack_21"].Visible = false
+end)
+
+-- BACKPACK TAB
+LMG2L["TextButton6_e"].MouseButton1Click:Connect(function()
+LMG2L["output_13"].Visible = false
+LMG2L["player_1d"].Visible = false
+LMG2L["extra_1f"].Visible = false
+LMG2L["backpack_21"].Visible = true
+end)
+
+-- MINIMIZE BUTTON
+local minimized = false
+
+LMG2L["TextButton6_2c"].MouseButton1Click:Connect(function()
+minimized = not minimized
+
+if minimized then
+    ExecutorFrame.Visible = false
+    AdminFrame.Visible = false
+    Main.Size = UDim2.new(0,472,0,20)
+else
+    ExecutorFrame.Visible = true
+    Main.Size = UDim2.new(0,472,0,20)
+end
+end)
+
+return LMG2L["ScreenGui_1"], require;
