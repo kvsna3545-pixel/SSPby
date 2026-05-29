@@ -28,7 +28,8 @@ LMG2L["TextLabel_3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 LMG2L["TextLabel_3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 LMG2L["TextLabel_3"]["Size"] = UDim2.new(0, 510, 0, 18);
 LMG2L["TextLabel_3"]["Text"] = [[Project Mega Sigma]];
-
+LMG2L[TextLabel_3]["Active"] = true;
+LMG2L[TextLabel_3]["Draggable"] = true;
 
 -- Players.Hacke999999999980.PlayerGui.ScreenGui.Frame.TextButton
 LMG2L["TextButton_4"] = Instance.new("TextButton", LMG2L["Frame_2"]);
